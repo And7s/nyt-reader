@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NYTReader</string>
+    <string name="app_name">New York Times Reader</string>
     <string-array name="sortOptions">
         <item>newest</item>
         <item>oldest</item>

@@ -4,11 +4,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
+
 /**
  * Created by Andre on 18/03/2017.
  */
 
-public class Doc {
+public class Doc implements Serializable {
     public String web_url, snippet, lead_paragraph, source, headline, pub_date, section_name,
             subsection_name, image_url, news_desk;
 

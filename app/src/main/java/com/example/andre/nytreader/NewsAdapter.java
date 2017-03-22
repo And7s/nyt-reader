@@ -1,5 +1,7 @@
 package com.example.andre.nytreader;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,18 +24,32 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
         private TextView newsTitle, newsSummary, tvNewsDesk;
         private ImageView ivNewsImage;
-        private View itemView;
+        private Context context;
+        private Doc doc;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.itemView = itemView;
+            context = itemView.getContext();
             newsTitle = (TextView) itemView.findViewById(R.id.news_title);
             newsSummary = (TextView) itemView.findViewById(R.id.news_summary);
             ivNewsImage = (ImageView) itemView.findViewById(R.id.ivNewsImage);
             tvNewsDesk = (TextView) itemView.findViewById(R.id.news_news_desk);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickHandler();
+                }
+            });
+        }
+        public void onClickHandler() {
+            Intent i = new Intent(context, DocViewActivity.class);
+            i.putExtra("doc", doc);
+            itemView.getContext().startActivity(i);
         }
 
         public void setData(Doc d) {
+            doc = d;
             newsTitle.setText(d.headline);
             newsSummary.setText(d.lead_paragraph);
             tvNewsDesk.setText(d.news_desk);
