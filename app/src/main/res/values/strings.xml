@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTReader</string>
+    <string-array name="sortOptions">
+        <item>newest</item>
+        <item>oldest</item>
+    </string-array>
+</resources>
