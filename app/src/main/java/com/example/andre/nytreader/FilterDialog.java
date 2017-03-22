@@ -89,6 +89,7 @@ public class FilterDialog extends DialogFragment implements DatePickerDialog.OnD
         FilterCriteria.includeSports = cbSports.isChecked();
         FilterCriteria.includeFashion = cbFashion.isChecked();
         FilterCriteria.includeArts = cbArts.isChecked();
+        FilterCriteria.page = 1;
     }
 
     public void showDatePicker() {

@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Created by Andre on 18/03/2017.
  */
 
-public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
+public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder>  {
     private final static String NYT_URL = "http://www.nytimes.com/";
     public static class ViewHolder extends RecyclerView.ViewHolder {
 

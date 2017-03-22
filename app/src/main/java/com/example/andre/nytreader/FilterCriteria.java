@@ -10,8 +10,9 @@ import java.util.GregorianCalendar;
 public class FilterCriteria {
     public static int startDay, startMonth, startYear;
     public static String searchTerm;
-    public static int sort;
+    public static int sort, page;
     public static boolean includeArts, includeFashion, includeSports;
+    public static boolean hasMorePages;
 
     public FilterCriteria() {
         Calendar c = new GregorianCalendar();
@@ -23,6 +24,8 @@ public class FilterCriteria {
         includeArts = true;
         includeFashion = true;
         includeSports = true;
+        page = 1;
+        hasMorePages = false;
 
     }
 }
