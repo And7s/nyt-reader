@@ -40,14 +40,17 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* sorry, lazy
+* 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/p1toMja.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<img src='http://i.imgur.com/TPJwrvA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+<img src='http://i.imgur.com/FJxGytC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Notes
